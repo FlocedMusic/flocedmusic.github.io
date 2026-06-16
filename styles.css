@@ -68,14 +68,8 @@ img {
   backdrop-filter: blur(14px);
 }
 
-.brand {
-  width: max-content;
-  color: var(--red);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-style: italic;
-  line-height: 1;
-  text-shadow: 0 0 20px rgba(239, 24, 15, 0.35);
+.header-spacer {
+  min-width: 120px;
 }
 
 .site-nav {
@@ -125,6 +119,12 @@ img {
   color: #fff;
   letter-spacing: 0;
   font-size: 0.62rem;
+}
+
+.header-social img {
+  width: 17px;
+  height: 17px;
+  object-fit: contain;
 }
 
 .header-social a:hover,
@@ -253,16 +253,11 @@ h1 {
   transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
 }
 
-.platform-link span {
-  display: grid;
-  width: 22px;
-  height: 22px;
-  place-items: center;
-  border-radius: 50%;
-  background: #fff;
-  color: #050505;
-  font-size: 0.56rem;
-  letter-spacing: 0;
+.platform-link img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.18));
 }
 
 .platform-link:hover,
@@ -466,6 +461,12 @@ h2 {
   font-weight: 800;
 }
 
+.round-links img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
 .round-links a:hover,
 .round-links a:focus-visible {
   border-color: var(--red);
@@ -588,6 +589,10 @@ h2 {
 @media (max-width: 980px) {
   .site-header {
     grid-template-columns: 1fr auto;
+  }
+
+  .header-spacer {
+    min-width: 0;
   }
 
   .menu-button {
