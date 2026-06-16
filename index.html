@@ -1,38 +1,234 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FLOCED</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Floced - projet musical post-punk, synthwave et electronique."
+    />
+    <meta name="theme-color" content="#050505" />
+    <meta property="og:title" content="Floced" />
+    <meta
+      property="og:description"
+      content="Post-punk, synthwave, electronic. Entre ombre et lumiere."
+    />
+    <meta property="og:image" content="assets/floced-cover.jpeg" />
+    <title>Floced</title>
+    <link rel="icon" href="assets/floced-cover.jpeg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="Floced accueil">Floced</a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Navigation principale">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#releases">Releases</a>
+        <a href="#atelier">Atelier</a>
+        <a href="#video">Videos</a>
+        <a href="#links">Links</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-social" aria-label="Liens rapides">
+        <a href="https://open.spotify.com/search/Floced" aria-label="Spotify">Sp</a>
+        <a href="https://www.youtube.com/results?search_query=Floced+music" aria-label="YouTube">Yt</a>
+        <a href="https://soundcloud.com/search?q=Floced" aria-label="SoundCloud">Sc</a>
+        <a href="https://www.instagram.com/explore/search/keyword/?q=floced" aria-label="Instagram">Ig</a>
+      </div>
+    </header>
 
-<style>
-body{
-    background:#0b0b0b;
-    color:white;
-    font-family:Arial,sans-serif;
-    text-align:center;
-    padding-top:100px;
-}
+    <main>
+      <section id="home" class="hero" aria-label="Floced">
+        <div class="hero-art" role="img" aria-label="Paysage noir et blanc avec logo Floced"></div>
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="kicker">Post-punk <span></span> Synthwave <span></span> Electronic</p>
+          <h1>Floced</h1>
+          <div class="hero-actions" id="links">
+            <a class="platform-link" href="https://open.spotify.com/search/Floced">
+              <span>Sp</span>
+              Spotify
+            </a>
+            <a class="platform-link" href="https://www.youtube.com/results?search_query=Floced+music">
+              <span>Yt</span>
+              YouTube
+            </a>
+            <a class="platform-link" href="https://soundcloud.com/search?q=Floced">
+              <span>Sc</span>
+              SoundCloud
+            </a>
+            <a class="platform-link" href="https://floced.bandcamp.com/">
+              <span>Bc</span>
+              Bandcamp
+            </a>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#about" aria-label="Aller a la suite"></a>
+      </section>
 
-h1{
-    font-size:60px;
-    letter-spacing:10px;
-}
+      <section class="content-grid">
+        <article id="about" class="section-block about-block">
+          <p class="section-label">About</p>
+          <h2>Musique electronique sombre, nerveuse et nostalgique.</h2>
+          <p>
+            FLOCED est un projet de musique electronique aux influences post-punk,
+            synthwave et coldwave. Atmospheres nocturnes, rythmes mecaniques,
+            melodies tendues.
+          </p>
+          <p>
+            Entre ombre et lumiere, passe et futur, la musique avance comme une
+            image imprimee dans le noir.
+          </p>
+          <a class="outline-button" href="#contact">Contact</a>
+        </article>
 
-p{
-    color:#bbbbbb;
-    font-size:20px;
-}
-</style>
+        <section id="releases" class="section-block releases-block" aria-labelledby="releases-title">
+          <p class="section-label">Releases</p>
+          <h2 id="releases-title">Dernieres sorties</h2>
+          <div class="release-list">
+            <a class="release-card" href="https://floced.bandcamp.com/">
+              <img src="assets/floced-cover.jpeg" alt="Pochette Floced Endless Momentum" />
+              <strong>Endless Momentum</strong>
+              <span>EP · 2025</span>
+            </a>
+            <a class="release-card alt-red" href="https://floced.bandcamp.com/">
+              <div class="generated-cover">
+                <span>Floced</span>
+              </div>
+              <strong>Shadows of Tomorrow</strong>
+              <span>EP · 2024</span>
+            </a>
+            <a class="release-card alt-grey" href="https://floced.bandcamp.com/">
+              <div class="generated-cover">
+                <span>Floced</span>
+              </div>
+              <strong>Between Worlds</strong>
+              <span>EP · 2023</span>
+            </a>
+          </div>
+          <a class="outline-button centered" href="https://floced.bandcamp.com/">Voir toutes les sorties</a>
+        </section>
 
-</head>
-<body>
+        <aside class="side-column">
+          <section id="video" class="section-block video-block" aria-labelledby="video-title">
+            <p class="section-label">Latest video</p>
+            <h2 id="video-title">Endless Momentum</h2>
+            <a
+              class="video-frame"
+              href="https://www.youtube.com/results?search_query=FLOCED+Endless+Momentum+Official+Video"
+              aria-label="Voir la video Endless Momentum sur YouTube"
+            >
+              <img src="assets/floced-cover.jpeg" alt="Image de la video Endless Momentum" />
+              <span class="play-button"></span>
+            </a>
+          </section>
 
-<h1>FLOCED</h1>
+          <section id="contact" class="section-block follow-block" aria-labelledby="follow-title">
+            <p class="section-label">Follow</p>
+            <h2 id="follow-title">Liens</h2>
+            <div class="round-links">
+              <a href="https://open.spotify.com/search/Floced" aria-label="Spotify">Sp</a>
+              <a href="https://www.youtube.com/results?search_query=Floced+music" aria-label="YouTube">Yt</a>
+              <a href="https://soundcloud.com/search?q=Floced" aria-label="SoundCloud">Sc</a>
+              <a href="https://www.instagram.com/explore/search/keyword/?q=floced" aria-label="Instagram">Ig</a>
+              <a href="https://floced.bandcamp.com/" aria-label="Bandcamp">Bc</a>
+            </div>
+            <a class="mail-link" href="mailto:contact@floced.fr">contact@floced.fr</a>
+          </section>
+        </aside>
+      </section>
 
-<p>Electronic Music Producer</p>
+      <section id="atelier" class="atelier-section" aria-labelledby="atelier-title">
+        <div class="atelier-intro">
+          <p class="section-label">Atelier</p>
+          <div class="atelier-copy">
+            <h2 id="atelier-title">Materiel, bricolage audio et objets de creation.</h2>
+            <p>
+              Une partie du son vient aussi du geste : choisir, modifier, cabler,
+              tester. Cette rubrique rassemble le materiel utilise pour composer,
+              enregistrer et fabriquer les petits outils qui accompagnent FLOCED.
+            </p>
+          </div>
+        </div>
 
-<p>Official website coming soon.</p>
+        <div class="atelier-gallery">
+          <article class="atelier-card large">
+            <img src="assets/atelier-analogue.jpg" alt="Rack et machines analogiques utilisees dans l'atelier Floced" />
+            <div>
+              <span>Analogique</span>
+              <h3>Machines, textures et signal vivant</h3>
+              <p>Synthes, boites a rythmes, effets, chaines de son et essais de traitement.</p>
+            </div>
+          </article>
 
-</body>
+          <article class="atelier-card">
+            <img src="assets/atelier-modules-500.jpg" alt="Modules audio format 500 en fonctionnement" />
+            <div>
+              <span>Modules 500</span>
+              <h3>Preamp, dynamique et couleur</h3>
+              <p>Modules de traitement, niveaux, saturation et choix de texture avant l'enregistrement.</p>
+            </div>
+          </article>
+
+          <article class="atelier-card">
+            <img src="assets/atelier-patch.jpg" alt="Patch audio multicolore du studio Floced" />
+            <div>
+              <span>Patch</span>
+              <h3>Routage du studio</h3>
+              <p>Connexions, inserts, depart effets et chemins de signal entre machines.</p>
+            </div>
+          </article>
+
+          <article class="atelier-card">
+            <img src="assets/atelier-cables.jpg" alt="Cable jack en cours de soudure" />
+            <div>
+              <span>Confection</span>
+              <h3>Cables jack</h3>
+              <p>Assemblage, soudure, longueurs adaptees au studio et au live.</p>
+            </div>
+          </article>
+
+          <article class="atelier-card">
+            <img src="assets/atelier-box-carnhill.jpg" alt="Box passive avec transformateurs Carnhill et cables jack" />
+            <div>
+              <span>Passif</span>
+              <h3>Box transfos Carnhill</h3>
+              <p>Boites passives, transfos audio, isolation, adaptation et couleur du signal.</p>
+            </div>
+          </article>
+
+          <article class="atelier-card">
+            <img src="assets/atelier-controleurs.jpg" alt="Controleurs et surface de travail pour la creation musicale" />
+            <div>
+              <span>Controleurs</span>
+              <h3>Jeu, edition et performance</h3>
+              <p>Surfaces de controle, gestes en temps reel et pilotage des sessions de creation.</p>
+            </div>
+          </article>
+
+          <article class="atelier-card">
+            <img src="assets/atelier-reparations.jpg" alt="Carte electronique en cours de reparation dans l'atelier Floced" />
+            <div>
+              <span>Reparations</span>
+              <h3>Diagnostic et remise en etat</h3>
+              <p>Ouverture, observation, composants, contacts et petits sauvetages de materiel.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 FLOCED</span>
+      <span>flocedmusic.github.io</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
