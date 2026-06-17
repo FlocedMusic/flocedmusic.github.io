@@ -397,6 +397,7 @@ h2 {
 }
 
 .generated-cover {
+  position: relative;
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -404,15 +405,28 @@ h2 {
 }
 
 .generated-cover span {
-  position: relative;
-  color: var(--red);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.7rem, 3vw, 2.6rem);
-  font-style: italic;
-  text-transform: none;
-  letter-spacing: 0;
-  text-shadow: 0 0 24px rgba(239, 24, 15, 0.4);
-  transform: none;
+  display: none;
+}
+
+.generated-cover::before,
+.generated-cover::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.generated-cover::before {
+  inset: 18%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transform: rotate(-8deg);
+}
+
+.generated-cover::after {
+  width: 46%;
+  height: 46%;
+  border: 2px solid rgba(239, 24, 15, 0.85);
+  border-radius: 50%;
+  box-shadow: 0 0 34px rgba(239, 24, 15, 0.36);
 }
 
 .alt-red .generated-cover {
