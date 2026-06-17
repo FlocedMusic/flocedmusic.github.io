@@ -20,7 +20,7 @@
   </head>
   <body>
     <header class="site-header" data-header>
-      <div class="header-spacer" aria-hidden="true"></div>
+      <a class="brand" href="#home" aria-label="Accueil Floced">Floced</a>
       <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
         <span></span>
         <span></span>
@@ -38,16 +38,16 @@
       </nav>
       <div class="header-social" aria-label="Liens rapides">
         <a href="https://open.spotify.com/search/Floced" aria-label="Spotify">
-          <img src="https://cdn.simpleicons.org/spotify/ffffff" alt="" />
+          <img src="https://cdn.simpleicons.org/spotify/1DB954" alt="" />
         </a>
         <a href="https://www.youtube.com/results?search_query=Floced+music" aria-label="YouTube">
-          <img src="https://cdn.simpleicons.org/youtube/ffffff" alt="" />
+          <img src="https://cdn.simpleicons.org/youtube/FF0000" alt="" />
         </a>
         <a href="https://soundcloud.com/floced_v2" aria-label="SoundCloud">
-          <img src="https://cdn.simpleicons.org/soundcloud/ffffff" alt="" />
+          <img src="https://cdn.simpleicons.org/soundcloud/FF5500" alt="" />
         </a>
         <a href="https://www.instagram.com/explore/search/keyword/?q=floced" aria-label="Instagram">
-          <img src="https://cdn.simpleicons.org/instagram/ffffff" alt="" />
+          <img src="https://cdn.simpleicons.org/instagram/E4405F" alt="" />
         </a>
       </div>
     </header>
@@ -58,21 +58,22 @@
         <div class="hero-shade"></div>
         <div class="hero-content">
           <h1>Floced</h1>
+          <p class="kicker">Music <span></span> Electronic</p>
           <div class="hero-actions" id="links">
             <a class="platform-link" href="https://open.spotify.com/search/Floced">
-              <img src="https://cdn.simpleicons.org/spotify/ffffff" alt="" />
+              <img src="https://cdn.simpleicons.org/spotify/1DB954" alt="" />
               Spotify
             </a>
             <a class="platform-link" href="https://www.youtube.com/results?search_query=Floced+music">
-              <img src="https://cdn.simpleicons.org/youtube/ffffff" alt="" />
+              <img src="https://cdn.simpleicons.org/youtube/FF0000" alt="" />
               YouTube
             </a>
             <a class="platform-link" href="https://soundcloud.com/floced_v2">
-              <img src="https://cdn.simpleicons.org/soundcloud/ffffff" alt="" />
+              <img src="https://cdn.simpleicons.org/soundcloud/FF5500" alt="" />
               SoundCloud
             </a>
             <a class="platform-link" href="https://floced.bandcamp.com/">
-              <img src="https://cdn.simpleicons.org/bandcamp/ffffff" alt="" />
+              <img src="https://cdn.simpleicons.org/bandcamp/629AA9" alt="" />
               Bandcamp
             </a>
           </div>
@@ -99,7 +100,7 @@
         <section id="releases" class="section-block releases-block" aria-labelledby="releases-title">
           <p class="section-label">Releases</p>
           <h2 id="releases-title">Dernieres sorties</h2>
-          <div class="release-list">
+          <div class="release-list is-collapsed" data-release-list>
             <a class="release-card" href="listen/">
               <img src="assets/covers/nina-floced.jpeg" alt="Pochette Nina de Floced" />
               <strong>Nina</strong>
@@ -115,144 +116,183 @@
               <strong>A Tear from You</strong>
               <span>Single</span>
             </a>
-            <a class="release-card" href="https://open.spotify.com/intl-fr/album/5I50Y1anppmDKLne4bzTFM?si=pAqGvbF3SDODXYgmn0be8Q">
+            <a class="release-card extra-release" href="https://open.spotify.com/intl-fr/album/5I50Y1anppmDKLne4bzTFM?si=pAqGvbF3SDODXYgmn0be8Q">
               <img src="assets/covers/borderland.jpg" alt="Pochette Borderland de Floced" />
               <strong>Borderland</strong>
               <span>Single</span>
             </a>
-            <a class="release-card" href="https://floced.bandcamp.com/">
+            <a class="release-card extra-release" href="https://floced.bandcamp.com/">
               <img src="assets/covers/city-floced-v2.png" alt="Pochette City de Floced" />
               <strong>City</strong>
               <span>Single</span>
             </a>
-            <a class="release-card" href="https://open.spotify.com/album/6VqcDgtYGVvOjx1WU6ecEV?si=NdfBXzXMQIq8rLbqIpY4cw">
+            <a class="release-card extra-release" href="https://open.spotify.com/album/6VqcDgtYGVvOjx1WU6ecEV?si=NdfBXzXMQIq8rLbqIpY4cw">
               <img src="assets/covers/constantly-evolving.jpg" alt="Pochette Constantly Evolving de Floced" />
               <strong>Constantly Evolving</strong>
               <span>Single</span>
             </a>
-            <a class="release-card" href="https://floced.bandcamp.com/">
+            <a class="release-card extra-release" href="https://floced.bandcamp.com/">
               <img src="assets/covers/deep-collapsing.jpg" alt="Pochette Deep Collapsing de Floced" />
               <strong>Deep Collapsing</strong>
               <span>Single</span>
             </a>
-            <a class="release-card" href="https://floced.bandcamp.com/">
+            <a class="release-card extra-release" href="https://floced.bandcamp.com/">
               <img src="assets/covers/disco-harmony.jpg" alt="Pochette Disco Harmony de Floced" />
               <strong>Disco Harmony</strong>
               <span>Single</span>
             </a>
-            <a class="release-card" href="https://floced.bandcamp.com/">
+            <a class="release-card extra-release" href="https://floced.bandcamp.com/">
               <img src="assets/covers/exodus.png" alt="Pochette Exodus de Floced" />
               <strong>Exodus</strong>
               <span>Single</span>
             </a>
-            <a class="release-card" href="https://open.spotify.com/intl-fr/album/66E2Rk4wNsh2YkJsWgvLWn?si=A7TZA32KTA641c7puvpHVA">
+            <a class="release-card extra-release" href="https://open.spotify.com/intl-fr/album/66E2Rk4wNsh2YkJsWgvLWn?si=A7TZA32KTA641c7puvpHVA">
               <img src="assets/covers/expandable-rotor.png" alt="Pochette Expandable Rotor de Floced" />
               <strong>Expandable Rotor</strong>
               <span>Single</span>
             </a>
-            <a class="release-card" href="https://open.spotify.com/intl-fr/album/4RlqBLo5HuuHwA0KpJM7Ei?si=QdxN4VBYTAasHBSLdKl2vg">
+            <a class="release-card extra-release" href="https://open.spotify.com/intl-fr/album/4RlqBLo5HuuHwA0KpJM7Ei?si=QdxN4VBYTAasHBSLdKl2vg">
               <img src="assets/covers/extreme-funk.png" alt="Pochette Extreme Funk de Floced" />
               <strong>Extreme Funk</strong>
               <span>Single</span>
             </a>
-            <a class="release-card" href="https://floced.bandcamp.com/">
+            <a class="release-card extra-release" href="https://floced.bandcamp.com/">
               <img src="assets/covers/get-out-off.png" alt="Pochette Get Out Off de Floced" />
               <strong>Get Out Off</strong>
               <span>Single</span>
             </a>
-            <a class="release-card" href="https://floced.bandcamp.com/">
+            <a class="release-card extra-release" href="https://floced.bandcamp.com/">
               <img src="assets/covers/hypnotic.jpg" alt="Pochette Hypnotic de Floced" />
               <strong>Hypnotic</strong>
               <span>Single</span>
             </a>
-            <a class="release-card" href="https://floced.bandcamp.com/">
+            <a class="release-card extra-release" href="https://floced.bandcamp.com/">
               <img src="assets/covers/i-come-life.jpg" alt="Pochette I Come Life de Floced" />
               <strong>I Come Life</strong>
               <span>Single</span>
             </a>
-            <a class="release-card" href="https://floced.bandcamp.com/">
+            <a class="release-card extra-release" href="https://floced.bandcamp.com/">
               <img src="assets/covers/i-take-life.jpg" alt="Pochette I Take Life de Floced" />
               <strong>I Take Life</strong>
               <span>Single</span>
             </a>
-            <a class="release-card" href="https://floced.bandcamp.com/">
+            <a class="release-card extra-release" href="https://floced.bandcamp.com/">
               <img src="assets/covers/lost-to-eternity.jpg" alt="Pochette Lost to Eternity de Floced" />
               <strong>Lost to Eternity</strong>
               <span>Single</span>
             </a>
-            <a class="release-card" href="https://open.spotify.com/album/7B5H5BAgBxGlJ0ThlPE9tI?si=x1F2a-7ESgWk79sTMbirfA">
+            <a class="release-card extra-release" href="https://open.spotify.com/album/7B5H5BAgBxGlJ0ThlPE9tI?si=x1F2a-7ESgWk79sTMbirfA">
               <img src="assets/covers/melodreams.png" alt="Pochette MeloDreams de Floced" />
               <strong>MeloDreams</strong>
               <span>Single</span>
             </a>
-            <a class="release-card" href="https://floced.bandcamp.com/">
+            <a class="release-card extra-release" href="https://floced.bandcamp.com/">
               <img src="assets/covers/midnight-im-coming-home.jpg" alt="Pochette Midnight I'm Coming Home de Floced" />
               <strong>Midnight I'm Coming Home</strong>
               <span>Single</span>
             </a>
-            <a class="release-card" href="https://floced.bandcamp.com/">
+            <a class="release-card extra-release" href="https://floced.bandcamp.com/">
               <img src="assets/covers/no-place.jpg" alt="Pochette No Place de Floced" />
               <strong>No Place</strong>
               <span>Single</span>
             </a>
-            <a class="release-card" href="https://floced.bandcamp.com/">
+            <a class="release-card extra-release" href="https://floced.bandcamp.com/">
               <img src="assets/covers/no-return.png" alt="Pochette No Return de Floced" />
               <strong>No Return</strong>
               <span>Single</span>
             </a>
-            <a class="release-card" href="https://floced.bandcamp.com/">
+            <a class="release-card extra-release" href="https://floced.bandcamp.com/">
               <img src="assets/covers/out-of-time.jpg" alt="Pochette Out of Time de Floced" />
               <strong>Out of Time</strong>
               <span>Single</span>
             </a>
-            <a class="release-card" href="https://open.spotify.com/album/3l4Y8hUCySdhfmXKebowq1?si=9UcmJusuShioNj6NiwCb3w">
+            <a class="release-card extra-release" href="https://open.spotify.com/album/3l4Y8hUCySdhfmXKebowq1?si=9UcmJusuShioNj6NiwCb3w">
               <img src="assets/covers/present-moment.jpg" alt="Pochette Present Moment de Floced" />
               <strong>Present Moment</strong>
               <span>Single</span>
             </a>
-            <a class="release-card" href="https://open.spotify.com/album/1yrGp0zgwyiqWayhnEeEji?si=Fiq5at1oR9-ycbpWa3477Q">
+            <a class="release-card extra-release" href="https://open.spotify.com/album/1yrGp0zgwyiqWayhnEeEji?si=Fiq5at1oR9-ycbpWa3477Q">
               <img src="assets/covers/she.png" alt="Pochette She de Floced" />
               <strong>She</strong>
               <span>Single</span>
             </a>
-            <a class="release-card" href="https://floced.bandcamp.com/">
+            <a class="release-card extra-release" href="https://floced.bandcamp.com/">
               <img src="assets/covers/sleep-together.png" alt="Pochette Sleep Together de Floced" />
               <strong>Sleep Together</strong>
               <span>Single</span>
             </a>
-            <a class="release-card" href="https://floced.bandcamp.com/">
+            <a class="release-card extra-release" href="https://floced.bandcamp.com/">
               <img src="assets/covers/subway-to-nowhere.png" alt="Pochette Subway to Nowhere de Floced" />
               <strong>Subway to Nowhere</strong>
               <span>Single</span>
             </a>
-            <a class="release-card" href="https://open.spotify.com/intl-fr/album/3UHAjbknQCkm889papOX0X?si=wLAAGOtPQk-Zu9pGkOfrEw">
+            <a class="release-card extra-release" href="https://open.spotify.com/intl-fr/album/3UHAjbknQCkm889papOX0X?si=wLAAGOtPQk-Zu9pGkOfrEw">
               <img src="assets/covers/supersonic-suicide.jpg" alt="Pochette Supersonic Suicide de Floced" />
               <strong>Supersonic Suicide</strong>
               <span>Single</span>
             </a>
-            <a class="release-card" href="https://floced.bandcamp.com/">
+            <a class="release-card extra-release" href="https://floced.bandcamp.com/">
               <img src="assets/covers/the-first-one.jpg" alt="Pochette The First One de Floced" />
               <strong>The First One</strong>
               <span>Single</span>
             </a>
-            <a class="release-card" href="https://floced.bandcamp.com/">
+            <a class="release-card extra-release" href="https://floced.bandcamp.com/">
               <img src="assets/covers/tv.jpg" alt="Pochette TV de Floced" />
               <strong>TV</strong>
               <span>Single</span>
             </a>
-            <a class="release-card" href="https://floced.bandcamp.com/">
+            <a class="release-card extra-release" href="https://floced.bandcamp.com/">
               <img src="assets/covers/when-they-see-me.jpg" alt="Pochette When They See Me de Floced" />
               <strong>When They See Me</strong>
               <span>Single</span>
             </a>
-            <a class="release-card" href="https://open.spotify.com/intl-fr/album/5JoCH5VHh1HJ95iQegcdLj?si=NqTg2l9JSzqVvGhUZRWJ7g">
+            <a class="release-card extra-release" href="https://open.spotify.com/intl-fr/album/5JoCH5VHh1HJ95iQegcdLj?si=NqTg2l9JSzqVvGhUZRWJ7g">
               <img src="assets/covers/without-death.jpeg" alt="Pochette Without Death de Floced" />
               <strong>Without Death</strong>
               <span>Single</span>
             </a>
           </div>
-          <a class="outline-button centered" href="listen/">Ecouter maintenant</a>
+          <button class="outline-button centered releases-toggle" type="button" data-release-toggle>Voir toutes les sorties</button>
         </section>
+
+        <aside class="side-column">
+          <section id="video" class="section-block video-block" aria-labelledby="video-title">
+            <p class="section-label">Latest video</p>
+            <h2 id="video-title">Plants by Floced 2024</h2>
+            <a
+              class="video-frame"
+              href="https://www.youtube.com/watch?v=4AnOS8_bzo8"
+              aria-label="Voir la video Plants by Floced 2024 sur YouTube"
+            >
+              <img src="https://img.youtube.com/vi/4AnOS8_bzo8/hqdefault.jpg" alt="Image de la video Plants by Floced 2024" />
+              <span class="play-button"></span>
+            </a>
+          </section>
+
+          <section id="contact" class="section-block follow-block" aria-labelledby="follow-title">
+            <p class="section-label">Follow</p>
+            <h2 id="follow-title">Liens</h2>
+            <div class="round-links">
+              <a href="https://open.spotify.com/search/Floced" aria-label="Spotify">
+                <img src="https://cdn.simpleicons.org/spotify/1DB954" alt="" />
+              </a>
+              <a href="https://www.youtube.com/results?search_query=Floced+music" aria-label="YouTube">
+                <img src="https://cdn.simpleicons.org/youtube/FF0000" alt="" />
+              </a>
+              <a href="https://soundcloud.com/floced_v2" aria-label="SoundCloud">
+                <img src="https://cdn.simpleicons.org/soundcloud/FF5500" alt="" />
+              </a>
+              <a href="https://www.instagram.com/explore/search/keyword/?q=floced" aria-label="Instagram">
+                <img src="https://cdn.simpleicons.org/instagram/E4405F" alt="" />
+              </a>
+              <a href="https://floced.bandcamp.com/" aria-label="Bandcamp">
+                <img src="https://cdn.simpleicons.org/bandcamp/629AA9" alt="" />
+              </a>
+            </div>
+            <a class="mail-link" href="mailto:contact@floced.fr">contact@floced.fr</a>
+            <a class="mail-link mail-link-secondary" href="mailto:floced2020@gmail.com">floced2020@gmail.com</a>
+          </section>
+        </aside>
 
         <section id="store" class="section-block store-block" aria-labelledby="store-title">
           <div class="store-copy">
@@ -276,44 +316,7 @@
           </a>
         </section>
 
-        <aside class="side-column">
-          <section id="video" class="section-block video-block" aria-labelledby="video-title">
-            <p class="section-label">Latest video</p>
-            <h2 id="video-title">Plants by Floced 2024</h2>
-            <a
-              class="video-frame"
-              href="https://www.youtube.com/watch?v=4AnOS8_bzo8"
-              aria-label="Voir la video Plants by Floced 2024 sur YouTube"
-            >
-              <img src="https://img.youtube.com/vi/4AnOS8_bzo8/hqdefault.jpg" alt="Image de la video Plants by Floced 2024" />
-              <span class="play-button"></span>
-            </a>
-          </section>
 
-          <section id="contact" class="section-block follow-block" aria-labelledby="follow-title">
-            <p class="section-label">Follow</p>
-            <h2 id="follow-title">Liens</h2>
-            <div class="round-links">
-              <a href="https://open.spotify.com/search/Floced" aria-label="Spotify">
-                <img src="https://cdn.simpleicons.org/spotify/ffffff" alt="" />
-              </a>
-              <a href="https://www.youtube.com/results?search_query=Floced+music" aria-label="YouTube">
-                <img src="https://cdn.simpleicons.org/youtube/ffffff" alt="" />
-              </a>
-              <a href="https://soundcloud.com/floced_v2" aria-label="SoundCloud">
-                <img src="https://cdn.simpleicons.org/soundcloud/ffffff" alt="" />
-              </a>
-              <a href="https://www.instagram.com/explore/search/keyword/?q=floced" aria-label="Instagram">
-                <img src="https://cdn.simpleicons.org/instagram/ffffff" alt="" />
-              </a>
-              <a href="https://floced.bandcamp.com/" aria-label="Bandcamp">
-                <img src="https://cdn.simpleicons.org/bandcamp/ffffff" alt="" />
-              </a>
-            </div>
-            <a class="mail-link" href="mailto:contact@floced.fr">contact@floced.fr</a>
-            <a class="mail-link mail-link-secondary" href="mailto:floced2020@gmail.com">floced2020@gmail.com</a>
-          </section>
-        </aside>
       </section>
 
       <section id="atelier" class="atelier-section" aria-labelledby="atelier-title">
@@ -398,7 +401,6 @@
 
     <footer class="site-footer">
       <span>© 2026 FLOCED</span>
-      <span>flocedmusic.github.io</span>
     </footer>
 
     <script src="script.js"></script>

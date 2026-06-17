@@ -1,6 +1,8 @@
 const header = document.querySelector("[data-header]");
 const menuButton = document.querySelector(".menu-button");
 const nav = document.querySelector("#site-nav");
+const releaseList = document.querySelector("[data-release-list]");
+const releaseToggle = document.querySelector("[data-release-toggle]");
 
 const syncHeader = () => {
   header.classList.toggle("is-scrolled", window.scrollY > 16);
@@ -19,4 +21,11 @@ nav.addEventListener("click", (event) => {
     nav.classList.remove("is-open");
     menuButton.setAttribute("aria-expanded", "false");
   }
+});
+
+releaseToggle?.addEventListener("click", () => {
+  if (!releaseList) return;
+
+  const isOpening = releaseList.classList.toggle("is-collapsed") === false;
+  releaseToggle.textContent = isOpening ? "Reduire les sorties" : "Voir toutes les sorties";
 });
