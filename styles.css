@@ -349,9 +349,9 @@ h2 {
 
 .store-visual img {
   width: 100%;
-  aspect-ratio: 16 / 7;
-  object-fit: cover;
-  object-position: left center;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  object-position: center;
 }
 
 .store-copy {
@@ -879,6 +879,11 @@ h2 {
   .store-block {
     grid-column: auto;
     grid-template-columns: 1fr;
+  }
+
+  .store-visual,
+  .store-copy {
+    order: initial;
   }
 
   .side-column {
