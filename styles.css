@@ -340,16 +340,33 @@ h2 {
 
 .store-visual {
   order: 2;
-  display: block;
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  background: #fff;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 12px;
+  align-items: stretch;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.08), transparent 44%),
+    rgba(255, 255, 255, 0.04);
+  padding: 12px;
   overflow: hidden;
   box-shadow: 0 18px 44px rgba(0, 0, 0, 0.36);
 }
 
-.store-visual img {
+.merch-item {
+  display: block;
+  min-height: 132px;
+  background: #f6f6f6;
+  overflow: hidden;
+}
+
+.merch-item.featured {
+  grid-row: span 2;
+}
+
+.merch-item img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: 100%;
   object-fit: contain;
   object-position: center;
 }
