@@ -70,12 +70,22 @@ img {
 
 .brand {
   width: max-content;
-  color: var(--red);
+  color: rgba(207, 213, 216, 0.68);
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(2rem, 4vw, 3rem);
   font-style: italic;
   line-height: 1;
-  text-shadow: 0 0 20px rgba(239, 24, 15, 0.35);
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.18),
+    0 0 18px rgba(210, 216, 220, 0.18);
+  opacity: 0.78;
+  transition: color 160ms ease, opacity 160ms ease;
+}
+
+.brand:hover,
+.brand:focus-visible {
+  color: rgba(237, 241, 243, 0.9);
+  opacity: 0.95;
 }
 
 .site-nav {
@@ -210,6 +220,7 @@ img {
   letter-spacing: 0.28em;
   font-size: clamp(0.68rem, 1.8vw, 0.95rem);
   font-weight: 800;
+  transform: translateY(clamp(-72px, -5vw, -34px));
 }
 
 .kicker span {
@@ -235,7 +246,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(4, minmax(130px, 1fr));
   gap: 14px;
-  margin: clamp(28px, 6vw, 62px) auto 0;
+  margin: clamp(180px, 16vw, 245px) auto 0;
   max-width: 760px;
 }
 
@@ -659,6 +670,10 @@ h2 {
     grid-template-columns: 1fr;
   }
 
+  .hero-actions {
+    margin-top: 128px;
+  }
+
   .platform-link,
   .outline-button {
     width: 100%;
@@ -684,6 +699,7 @@ h2 {
 
   .kicker {
     letter-spacing: 0.18em;
+    transform: translateY(-28px);
   }
 }
 
