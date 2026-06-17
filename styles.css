@@ -183,11 +183,13 @@ img {
 }
 
 .hero-art {
+  inset: 0 auto 0 50%;
+  width: min(100%, 1360px);
   background-image: url("assets/floced-cover.jpeg");
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center;
   filter: saturate(1.04) contrast(1.06);
-  transform: none;
+  transform: translateX(-50%);
 }
 
 .hero-art::after {
@@ -216,6 +218,13 @@ img {
 }
 
 .kicker {
+  position: absolute;
+  top: clamp(-150px, -10vw, -92px);
+  left: 50%;
+  z-index: 3;
+  width: max-content;
+  max-width: calc(100vw - 40px);
+  transform: translateX(-50%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -357,34 +366,48 @@ h2 {
 .store-visual {
   order: 2;
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 12px;
-  align-items: stretch;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(12px, 2vw, 18px);
+  align-items: start;
   border: 1px solid rgba(255, 255, 255, 0.12);
   background:
     linear-gradient(135deg, rgba(255, 255, 255, 0.08), transparent 44%),
     rgba(255, 255, 255, 0.04);
-  padding: 12px;
-  overflow: hidden;
+  padding: clamp(12px, 2vw, 18px);
+  overflow: visible;
   box-shadow: 0 18px 44px rgba(0, 0, 0, 0.36);
 }
 
 .merch-item {
-  display: block;
-  min-height: 132px;
-  background: #f6f6f6;
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+  color: #fff;
+}
+
+.merch-image {
+  display: grid;
+  min-height: 184px;
+  place-items: center;
+  background: #f7f7f7;
   overflow: hidden;
 }
 
-.merch-item.featured {
-  grid-row: span 2;
-}
-
-.merch-item img {
+.merch-image img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   object-position: center;
+}
+
+.merch-item strong {
+  display: block;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: clamp(0.72rem, 1.2vw, 0.86rem);
+  font-weight: 700;
+  line-height: 1.35;
+  text-transform: none;
+  letter-spacing: 0;
 }
 
 .store-copy {
@@ -789,6 +812,15 @@ h2 {
   background: #111;
 }
 
+.listen-cover {
+  width: min(100%, 230px);
+  aspect-ratio: 1;
+  margin: 0 auto 18px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  object-fit: cover;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.48);
+}
+
 .listen-links {
   display: grid;
   gap: 10px;
@@ -968,7 +1000,8 @@ h2 {
 
   .hero-actions,
   .release-list,
-  .side-column {
+  .side-column,
+  .store-visual {
     grid-template-columns: 1fr;
   }
 
@@ -1000,6 +1033,10 @@ h2 {
   }
 
   .kicker {
+    position: static;
+    width: auto;
+    max-width: none;
+    transform: none;
     letter-spacing: 0.18em;
   }
 
