@@ -184,7 +184,7 @@ img {
 
 .hero-art {
   inset: 0 auto 0 50%;
-  width: min(100%, 1360px);
+  width: min(100% - 40px, var(--max));
   background-image: url("assets/floced-cover.jpeg");
   background-size: cover;
   background-position: center;
