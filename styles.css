@@ -183,11 +183,11 @@ img {
 }
 
 .hero-art {
-  background-image: url("assets/floced-hero-wide.jpeg");
-  background-size: cover;
-  background-position: center 50%;
-  filter: saturate(1.04) contrast(1.08);
-  transform: scale(1.005);
+  background-image: url("assets/floced-cover.jpeg");
+  background-size: 100% 100%;
+  background-position: center;
+  filter: saturate(1.04) contrast(1.06);
+  transform: none;
 }
 
 .hero-art::after {
@@ -252,7 +252,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(4, minmax(130px, 1fr));
   gap: 14px;
-  margin: clamp(78px, 8vw, 118px) auto 0;
+  margin: clamp(150px, 13vw, 210px) auto 0;
   max-width: 760px;
 }
 
