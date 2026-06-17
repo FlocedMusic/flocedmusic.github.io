@@ -400,30 +400,32 @@ h2 {
   display: grid;
   place-items: center;
   overflow: hidden;
+  padding: 14px;
 }
 
 .generated-cover span {
   position: relative;
   color: var(--red);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2.6rem, 5vw, 4.5rem);
+  font-size: clamp(1.7rem, 3vw, 2.6rem);
   font-style: italic;
   text-transform: none;
   letter-spacing: 0;
   text-shadow: 0 0 24px rgba(239, 24, 15, 0.4);
+  transform: none;
 }
 
 .alt-red .generated-cover {
   background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.15), #070707),
-    radial-gradient(circle at 52% 20%, rgba(239, 24, 15, 0.72), transparent 42%),
-    linear-gradient(90deg, #170303, #050505);
+    linear-gradient(135deg, rgba(239, 24, 15, 0.3), transparent 44%),
+    radial-gradient(circle at 55% 38%, rgba(239, 24, 15, 0.42), transparent 36%),
+    linear-gradient(180deg, #111, #040404);
 }
 
 .alt-grey .generated-cover {
   background:
-    linear-gradient(90deg, #030303, transparent 35%, #030303),
-    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.18) 0 2px, transparent 2px 70px),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.12), transparent 44%),
+    radial-gradient(circle at 50% 40%, rgba(255, 255, 255, 0.08), transparent 34%),
     linear-gradient(180deg, #151515, #050505);
 }
 
