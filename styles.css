@@ -312,7 +312,7 @@ h1 {
   display: grid;
   grid-template-columns: 0.85fr 1.55fr 1fr;
   column-gap: clamp(34px, 5vw, 72px);
-  row-gap: clamp(18px, 3vw, 34px);
+  row-gap: 0;
   padding: clamp(50px, 8vw, 92px) 0 56px;
 }
 
