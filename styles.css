@@ -1064,3 +1064,7 @@ h2 {
     transition-duration: 0.01ms !important;
   }
 }
+.contact-button {
+  font-size: 0.66rem;
+  letter-spacing: 0.2em;
+}
