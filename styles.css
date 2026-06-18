@@ -631,7 +631,7 @@ h2 {
 .atelier-section {
   width: min(100% - 40px, var(--max));
   margin: 0 auto;
-  padding: calc(var(--header) + 34px) 0 clamp(58px, 8vw, 96px);
+  padding: 34px 0 clamp(58px, 8vw, 96px);
   border-top: 1px solid rgba(255, 255, 255, 0.09);
 }
 
