@@ -219,7 +219,7 @@ img {
 
 .kicker {
   position: absolute;
-  top: clamp(-150px, -10vw, -92px);
+  top: clamp(-96px, -6vw, -54px);
   left: 50%;
   z-index: 3;
   width: max-content;
