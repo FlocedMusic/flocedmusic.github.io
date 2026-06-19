@@ -4,6 +4,17 @@ const nav = document.querySelector("#site-nav");
 const releaseList = document.querySelector("[data-release-list]");
 const releaseToggle = document.querySelector("[data-release-toggle]");
 
+document.addEventListener("click", (event) => {
+  const link = event.target.closest?.("a[href]");
+  if (!link) return;
+
+  const url = new URL(link.href);
+  if (!["http:", "https:"].includes(url.protocol) || url.origin === window.location.origin) return;
+
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+});
+
 const syncHeader = () => {
   header.classList.toggle("is-scrolled", window.scrollY > 16);
 };
