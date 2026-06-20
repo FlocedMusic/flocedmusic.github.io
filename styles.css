@@ -187,8 +187,8 @@ img {
   width: min(100% - 40px, var(--max));
   background-image: url("assets/floced-hero-fx.png");
   background-size: cover;
-  background-position: center 46%;
-  filter: saturate(1.04) contrast(1.06);
+  background-position: 43% center;
+  filter: saturate(1.28) contrast(1.22) brightness(1.08);
   transform: translateX(-50%);
 }
 
@@ -217,34 +217,6 @@ img {
   text-align: center;
 }
 
-.hero-fx-badge {
-  position: absolute;
-  z-index: 3;
-  top: clamp(96px, 13vw, 150px);
-  right: max(calc((100vw - var(--max)) / 2 + 42px), 42px);
-  display: grid;
-  justify-items: end;
-  gap: 2px;
-  color: #fff;
-  text-align: right;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  text-shadow: 0 0 18px rgba(0, 0, 0, 0.78);
-}
-
-.hero-fx-badge strong {
-  font-size: clamp(1.6rem, 4vw, 3.8rem);
-  line-height: 0.9;
-  font-weight: 950;
-}
-
-.hero-fx-badge span {
-  color: var(--red);
-  font-size: clamp(0.58rem, 1.2vw, 0.86rem);
-  font-weight: 900;
-  letter-spacing: 0.12em;
-  text-transform: none;
-}
 
 .kicker {
   position: absolute;
@@ -289,10 +261,10 @@ h1 {
 
 .hero-actions {
   display: grid;
-  grid-template-columns: repeat(4, minmax(130px, 1fr));
-  gap: 14px;
-  margin: clamp(170px, 15vw, 235px) auto 0;
-  max-width: 760px;
+  grid-template-columns: repeat(4, minmax(118px, 1fr));
+  gap: 12px;
+  margin: clamp(230px, 22vw, 330px) 0 0 auto;
+  max-width: 680px;
 }
 
 .platform-link,
@@ -312,10 +284,10 @@ h1 {
 
 .hero-actions .platform-link {
   position: relative;
-  min-height: 58px;
+  min-height: 52px;
   flex-direction: column;
   gap: 6px;
-  padding: 8px 18px 10px;
+  padding: 7px 16px 9px;
   border-color: rgba(239, 24, 15, 0.82);
   background:
     linear-gradient(135deg, rgba(239, 24, 15, 0.22), transparent 38%),
@@ -1127,12 +1099,7 @@ h2 {
   }
 
   .hero-actions {
-    margin-top: 128px;
-  }
-
-  .hero-fx-badge {
-    top: 90px;
-    right: 22px;
+    margin-top: 180px;
   }
 
   .hero-actions .platform-link {
