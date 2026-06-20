@@ -185,9 +185,9 @@ img {
 .hero-art {
   inset: 0 auto 0 50%;
   width: min(100% - 40px, var(--max));
-  background-image: url("assets/floced-cover.jpeg");
+  background-image: url("assets/floced-hero-fx.png");
   background-size: cover;
-  background-position: center;
+  background-position: center 46%;
   filter: saturate(1.04) contrast(1.06);
   transform: translateX(-50%);
 }
@@ -197,8 +197,8 @@ img {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.18) 46%, rgba(0, 0, 0, 0.9) 100%),
-    radial-gradient(circle at 50% 45%, transparent 0 22rem, rgba(0, 0, 0, 0.42) 38rem);
+    linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.08) 48%, rgba(0, 0, 0, 0.88) 100%),
+    radial-gradient(circle at 48% 48%, transparent 0 24rem, rgba(0, 0, 0, 0.28) 42rem);
 }
 
 .hero-shade {
@@ -215,6 +215,35 @@ img {
   z-index: 2;
   width: min(100%, 920px);
   text-align: center;
+}
+
+.hero-fx-badge {
+  position: absolute;
+  z-index: 3;
+  top: clamp(96px, 13vw, 150px);
+  right: max(calc((100vw - var(--max)) / 2 + 42px), 42px);
+  display: grid;
+  justify-items: end;
+  gap: 2px;
+  color: #fff;
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-shadow: 0 0 18px rgba(0, 0, 0, 0.78);
+}
+
+.hero-fx-badge strong {
+  font-size: clamp(1.6rem, 4vw, 3.8rem);
+  line-height: 0.9;
+  font-weight: 950;
+}
+
+.hero-fx-badge span {
+  color: var(--red);
+  font-size: clamp(0.58rem, 1.2vw, 0.86rem);
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: none;
 }
 
 .kicker {
@@ -236,6 +265,7 @@ img {
   letter-spacing: 0.28em;
   font-size: clamp(0.68rem, 1.8vw, 0.95rem);
   font-weight: 800;
+  display: none;
 }
 
 .kicker span {
@@ -261,7 +291,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(4, minmax(130px, 1fr));
   gap: 14px;
-  margin: clamp(150px, 13vw, 210px) auto 0;
+  margin: clamp(170px, 15vw, 235px) auto 0;
   max-width: 760px;
 }
 
@@ -279,11 +309,55 @@ h1 {
   transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
 }
 
+
+.hero-actions .platform-link {
+  position: relative;
+  min-height: 58px;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px 18px 10px;
+  border-color: rgba(239, 24, 15, 0.82);
+  background:
+    linear-gradient(135deg, rgba(239, 24, 15, 0.22), transparent 38%),
+    rgba(8, 8, 8, 0.78);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06), 0 16px 30px rgba(0, 0, 0, 0.32);
+  clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%);
+}
+
+.hero-actions .platform-link::before,
+.hero-actions .platform-link::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.hero-actions .platform-link::before {
+  top: 8px;
+  left: 18px;
+  width: 38px;
+  height: 2px;
+  background: var(--red);
+}
+
+.hero-actions .platform-link::after {
+  right: 14px;
+  bottom: 8px;
+  width: 26px;
+  height: 1px;
+  background: rgba(239, 24, 15, 0.72);
+  transform: skewX(-28deg);
+}
+
 .platform-link img {
   width: 26px;
   height: 26px;
   object-fit: contain;
   filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.24));
+}
+
+.hero-actions .platform-link img {
+  width: 24px;
+  height: 24px;
 }
 
 .platform-link:hover,
@@ -1054,6 +1128,15 @@ h2 {
 
   .hero-actions {
     margin-top: 128px;
+  }
+
+  .hero-fx-badge {
+    top: 90px;
+    right: 22px;
+  }
+
+  .hero-actions .platform-link {
+    clip-path: polygon(6px 0, 100% 0, calc(100% - 6px) 100%, 0 100%);
   }
 
   .platform-link,
