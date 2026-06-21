@@ -743,8 +743,8 @@ h2 {
 .signal-separator {
   position: relative;
   width: min(100% - 40px, var(--max));
-  height: clamp(70px, 9vw, 118px);
-  margin: clamp(14px, 3vw, 34px) auto clamp(20px, 4vw, 48px);
+  height: clamp(44px, 6vw, 76px);
+  margin: clamp(4px, 1.4vw, 16px) auto clamp(6px, 1.8vw, 20px);
   overflow: hidden;
   opacity: 0.72;
 }
@@ -788,7 +788,8 @@ h2 {
 }
 
 .signal-separator-hero {
-  margin-top: clamp(-22px, -2vw, -10px);
+  margin-top: clamp(-28px, -2.4vw, -14px);
+  margin-bottom: clamp(0px, 1vw, 12px);
 }
 
 .atelier-section {
