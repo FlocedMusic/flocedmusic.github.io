@@ -843,7 +843,8 @@ h2 {
 }
 
 .atelier-card.studio-video-card {
-  grid-column: 2 / -1;
+  grid-column: 3;
+  min-height: 280px;
 }
 
 .atelier-card img {
