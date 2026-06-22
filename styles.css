@@ -428,6 +428,7 @@ h2 {
   grid-template-columns: minmax(0, 0.9fr) minmax(280px, 1.1fr);
   gap: clamp(18px, 3vw, 34px);
   align-items: center;
+  margin-top: clamp(36px, 5vw, 72px);
   padding: clamp(18px, 3vw, 30px);
   border: 1px solid rgba(239, 24, 15, 0.3);
   background:
@@ -583,6 +584,12 @@ h2 {
 
 .release-card.is-filtered-out {
   display: none;
+}
+
+.releases-toggle {
+  display: flex;
+  width: min(100%, 360px);
+  margin: 30px auto 0;
 }
 
 .generated-cover {

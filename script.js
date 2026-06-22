@@ -55,6 +55,10 @@ releaseFilters.forEach((button) => {
     releaseList.querySelectorAll(".release-card").forEach((card) => {
       card.classList.toggle("is-filtered-out", card.dataset.style !== filter);
     });
+
+    window.requestAnimationFrame(() => {
+      releaseList.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
   });
 });
 
