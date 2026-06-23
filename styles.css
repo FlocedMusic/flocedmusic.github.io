@@ -147,9 +147,8 @@ img {
 
 .header-social {
   position: absolute;
-  top: calc(100% + 10px);
-  left: 50%;
-  transform: translateX(-50%);
+  top: calc(100% + 30px);
+  right: clamp(96px, 12vw, 190px);
   display: flex;
   align-items: center;
   justify-content: center;
