@@ -708,6 +708,100 @@ h2 {
   border-left: 18px solid #050505;
 }
 
+.play-button.small {
+  width: 42px;
+  height: 42px;
+}
+
+.play-button.small::after {
+  left: 18px;
+  top: 13px;
+  border-top-width: 8px;
+  border-bottom-width: 8px;
+  border-left-width: 12px;
+}
+
+.video-links-block {
+  margin-top: 10px;
+}
+
+.video-link-list {
+  display: grid;
+  gap: 16px;
+}
+
+.video-link-card {
+  display: grid;
+  grid-template-columns: minmax(112px, 0.9fr) 1fr;
+  gap: 14px;
+  align-items: stretch;
+  border: 1px solid rgba(239, 24, 15, 0.7);
+  background:
+    linear-gradient(135deg, rgba(239, 24, 15, 0.14), rgba(5, 5, 5, 0.9) 48%),
+    rgba(255, 255, 255, 0.03);
+  padding: 10px;
+}
+
+.video-thumb {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background: #050505;
+}
+
+.video-thumb img {
+  width: 100%;
+  height: 100%;
+  min-height: 90px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  filter: grayscale(0.18) brightness(0.78);
+  transition: transform 180ms ease, filter 180ms ease;
+}
+
+.video-thumb:hover img,
+.video-thumb:focus-visible img {
+  transform: scale(1.04);
+  filter: grayscale(0) brightness(0.9);
+}
+
+.video-link-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.video-link-copy strong {
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.video-link-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.video-link-actions a {
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  padding: 8px 10px;
+  text-transform: uppercase;
+}
+
+.video-link-actions a:hover,
+.video-link-actions a:focus-visible {
+  border-color: var(--red);
+  color: var(--red);
+}
+
 .round-links {
   display: flex;
   flex-wrap: wrap;
@@ -1265,6 +1359,11 @@ h2 {
 
   .release-style-links {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .video-link-card {
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 
   .platform-link,
