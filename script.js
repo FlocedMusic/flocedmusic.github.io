@@ -4,8 +4,6 @@ const nav = document.querySelector("#site-nav");
 const releaseList = document.querySelector("[data-release-list]");
 const releaseToggle = document.querySelector("[data-release-toggle]");
 const releaseFilters = document.querySelectorAll("[data-release-filter]");
-const newsDialog = document.querySelector("[data-news-dialog]");
-const newsClose = document.querySelector("[data-news-close]");
 
 document.addEventListener("click", (event) => {
   const link = event.target.closest?.("a[href]");
@@ -36,29 +34,6 @@ nav.addEventListener("click", (event) => {
     menuButton.setAttribute("aria-expanded", "false");
   }
 });
-
-if (newsDialog instanceof HTMLDialogElement) {
-  const openNewsDialog = () => {
-    newsDialog.showModal();
-  };
-
-  if (document.readyState === "loading") {
-    window.addEventListener("DOMContentLoaded", openNewsDialog);
-  } else {
-    openNewsDialog();
-  }
-
-  newsClose?.addEventListener("click", () => {
-    newsDialog.close();
-  });
-
-  newsDialog.addEventListener("click", (event) => {
-    if (event.target === newsDialog) {
-      newsDialog.close();
-    }
-  });
-}
-
 
 const clearReleaseFilters = () => {
   releaseFilters.forEach((button) => button.classList.remove("is-active"));
