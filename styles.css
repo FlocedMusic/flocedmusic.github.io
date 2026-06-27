@@ -69,26 +69,22 @@ img {
 }
 
 .news-inline {
-  grid-column: 2;
-  align-self: end;
-  justify-self: center;
-  width: min(100%, 520px);
-  margin-top: clamp(46px, 7vw, 98px);
-  margin-bottom: clamp(24px, 4vw, 52px);
-  padding: clamp(22px, 4vw, 34px);
+  width: min(100%, 420px);
+  margin: 16px auto 0;
+  padding: clamp(14px, 2.4vw, 20px);
   border: 1px solid rgba(239, 24, 15, 0.86);
   background:
     linear-gradient(135deg, rgba(239, 24, 15, 0.18), rgba(0, 0, 0, 0.94) 42%),
     #050505;
   color: var(--text);
   display: grid;
-  gap: 18px;
+  gap: 12px;
   box-shadow: 0 24px 80px rgba(0, 0, 0, 0.52), 0 0 34px rgba(239, 24, 15, 0.14);
 }
 
 .news-inline h2 {
   margin-bottom: 0;
-  font-size: clamp(2rem, 5vw, 3.4rem);
+  font-size: clamp(1.45rem, 3.2vw, 2.15rem);
   line-height: 0.95;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -97,7 +93,7 @@ img {
 .news-inline p:not(.section-label) {
   margin: 0;
   color: var(--muted);
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .news-cover {
@@ -677,7 +673,7 @@ h2 {
 .releases-toggle {
   display: flex;
   width: min(100%, 360px);
-  margin: 30px auto 0;
+  margin: 18px auto 0;
 }
 
 .generated-cover {
@@ -1374,9 +1370,8 @@ h2 {
   }
 
   .news-inline {
-    grid-column: auto;
-    width: min(100%, 620px);
-    margin: 30px auto;
+    width: min(100%, 520px);
+    margin: 28px auto 0;
   }
 
   .store-block {
