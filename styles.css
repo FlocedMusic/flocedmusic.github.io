@@ -1085,9 +1085,9 @@ h2 {
 .listen-page {
   min-height: 100vh;
   background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.12), #030303 62%),
-    radial-gradient(circle at 50% 0%, rgba(239, 24, 15, 0.2), transparent 28rem),
-    url("assets/floced-cover.jpeg") center / cover fixed;
+    linear-gradient(180deg, rgba(0, 0, 0, 0.18), #030303 68%),
+    radial-gradient(circle at 50% 0%, rgba(239, 24, 15, 0.22), transparent 30rem),
+    url("assets/floced-links-artist-banner.jpg") center / cover fixed;
 }
 
 .listen-page::before {
@@ -1098,7 +1098,7 @@ h2 {
   background:
     linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
-    rgba(0, 0, 0, 0.68);
+    rgba(0, 0, 0, 0.74);
   background-size: 3px 3px, 3px 3px, auto;
 }
 
@@ -1126,7 +1126,7 @@ h2 {
 }
 
 .listen-card {
-  width: min(100%, 430px);
+  width: min(100%, 470px);
   padding: clamp(24px, 5vw, 34px);
   border: 1px solid rgba(239, 24, 15, 0.46);
   background: rgba(3, 3, 3, 0.82);
@@ -1155,7 +1155,7 @@ h2 {
 }
 
 .listen-release {
-  margin: 8px 0 22px;
+  margin: 10px 0 18px;
   color: var(--muted);
   text-align: center;
   text-transform: uppercase;
@@ -1188,7 +1188,7 @@ h2 {
 }
 
 .listen-cover-wide {
-  width: min(100%, 360px);
+  width: min(100%, 380px);
   aspect-ratio: 2.33;
   object-fit: cover;
   background: #000;
