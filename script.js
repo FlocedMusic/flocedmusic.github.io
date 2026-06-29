@@ -35,7 +35,6 @@ nav.addEventListener("click", (event) => {
   }
 });
 
-
 const clearReleaseFilters = () => {
   releaseFilters.forEach((button) => button.classList.remove("is-active"));
   releaseList?.querySelectorAll(".release-card").forEach((card) => {
