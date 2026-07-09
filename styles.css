@@ -1696,3 +1696,14 @@ h2 {
   }
 }
 /* End Floced video spacing fix */
+/* Floced language switch */
+.site-nav .lang-switch {
+  padding: 7px 9px;
+  border: 1px solid rgba(239, 24, 15, 0.72);
+  color: #fff;
+}
+
+.site-nav .lang-switch::after {
+  display: none;
+}
+/* End Floced language switch */
