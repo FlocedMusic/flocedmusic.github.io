@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   color-scheme: dark;
   --bg: #030303;
   --panel: #090909;
@@ -1669,3 +1669,20 @@ h2 {
     padding-top: calc(var(--header) + 36px);
   }
 }
+/* Floced video spacing fix */
+.video-page .video-hero {
+  margin-bottom: 20px;
+}
+
+.video-page .video-hero h1 {
+  display: none;
+}
+
+.video-page .video-hero p:not(.section-label) {
+  margin-top: 0;
+}
+
+.video-page .video-grid {
+  margin-top: 18px;
+}
+/* End Floced video spacing fix */
