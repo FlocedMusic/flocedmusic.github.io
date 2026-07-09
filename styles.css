@@ -1698,12 +1698,45 @@ h2 {
 /* End Floced video spacing fix */
 /* Floced language switch */
 .site-nav .lang-switch {
-  padding: 7px 9px;
-  border: 1px solid rgba(239, 24, 15, 0.72);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 34px;
+  padding: 7px 12px;
+  border: 1px solid rgba(239, 24, 15, 0.92);
+  background:
+    linear-gradient(135deg, rgba(239, 24, 15, 0.28), rgba(0, 0, 0, 0.84)),
+    #080808;
   color: #fff;
+  box-shadow: 0 0 24px rgba(239, 24, 15, 0.2);
 }
 
 .site-nav .lang-switch::after {
   display: none;
+}
+
+.site-nav .lang-switch:hover,
+.site-nav .lang-switch:focus-visible {
+  border-color: #fff;
+  background:
+    linear-gradient(135deg, rgba(239, 24, 15, 0.5), rgba(0, 0, 0, 0.8)),
+    #100;
+}
+
+.lang-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+@media (max-width: 980px) {
+  .site-nav .lang-switch {
+    justify-content: flex-start;
+    margin: 10px 28px 18px;
+    padding: 12px 14px;
+  }
 }
 /* End Floced language switch */
