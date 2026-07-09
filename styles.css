@@ -1670,8 +1670,12 @@ h2 {
   }
 }
 /* Floced video spacing fix */
+.video-page .video-shell {
+  padding-top: calc(var(--header) + 28px);
+}
+
 .video-page .video-hero {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .video-page .video-hero h1 {
@@ -1683,6 +1687,12 @@ h2 {
 }
 
 .video-page .video-grid {
-  margin-top: 18px;
+  margin-top: 16px;
+}
+
+@media (max-width: 720px) {
+  .video-page .video-shell {
+    padding-top: calc(var(--header) + 20px);
+  }
 }
 /* End Floced video spacing fix */
