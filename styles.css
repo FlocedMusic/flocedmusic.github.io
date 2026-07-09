@@ -1740,3 +1740,40 @@ h2 {
   }
 }
 /* End Floced language switch */
+/* Floced focus side block */
+.focus-block {
+  border-color: rgba(111, 183, 198, 0.54);
+  background:
+    linear-gradient(145deg, rgba(111, 183, 198, 0.1), rgba(239, 24, 15, 0.08) 48%, rgba(0, 0, 0, 0.92)),
+    #050505;
+}
+
+.focus-block h2 {
+  margin: 0 0 14px;
+  color: #fff;
+  font-size: clamp(1.55rem, 3vw, 2.25rem);
+  line-height: 0.98;
+}
+
+.focus-block p:not(.section-label) {
+  margin: 0;
+  color: var(--muted);
+}
+
+.focus-actions {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.focus-actions .outline-button {
+  width: 100%;
+  min-height: 44px;
+  justify-content: center;
+}
+
+.focus-actions .focus-secondary {
+  border-color: rgba(111, 183, 198, 0.8);
+}
+/* End Floced focus side block */
