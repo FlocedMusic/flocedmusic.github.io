@@ -499,6 +499,36 @@ h2 {
   margin-top: 36px;
 }
 
+.upcoming-release {
+  margin-top: 32px;
+}
+
+.upcoming-release-cover {
+  position: relative;
+  width: min(100%, 300px);
+  aspect-ratio: 1;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #080808;
+}
+
+.upcoming-release-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.upcoming-release h3 {
+  margin: 16px 0 8px;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.universe-block .upcoming-release-date {
+  color: var(--red);
+  font-weight: 700;
+}
+
 .about-follow-block .round-links {
   gap: 10px;
 }
