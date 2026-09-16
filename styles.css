@@ -488,7 +488,8 @@ h2 {
   font-weight: 760;
 }
 
-.about-block p:not(.section-label) {
+.about-block p:not(.section-label),
+.universe-block p:not(.section-label) {
   margin: 0 0 16px;
   color: var(--muted);
   font-size: 0.98rem;
@@ -611,10 +612,6 @@ h2 {
 
 .releases-intro p {
   margin: 0;
-}
-
-.releases-intro p + p {
-  margin-top: 10px;
   color: #fff;
   font-weight: 700;
 }
@@ -1391,6 +1388,10 @@ h2 {
 
   .content-grid {
     grid-template-columns: 1fr;
+  }
+
+  .universe-block {
+    margin-top: 36px;
   }
 
   .news-inline {
